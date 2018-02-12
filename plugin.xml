@@ -4,16 +4,17 @@
     <description>OutSystems plugin for AirWatch</description>
     <author>OutSystems Inc</author>
     
+    <!-- Global hooks -->
     <hook type="before_plugin_install" src="hooks/installAirWatch.js"/>
     <hook type="before_plugin_uninstall" src="hooks/removeAirWatch.js"/>
     
-
+    <!-- Android -->
     <platform name="android">
+        <!-- Android hooks -->
         <hook type="after_plugin_install" src="hooks/removeJars.js" />
+        
+        <!-- Gradle reference -->
         <framework src="libs/build.gradle" custom="true" type="gradleReference" />
     </platform>
 
-    <platform name="ios">
-
-    </platform>
 </plugin>

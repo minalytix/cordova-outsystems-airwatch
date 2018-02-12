@@ -5,10 +5,8 @@ module.exports = function(ctx) {
     }
 
     // make sure android platform is part of build
-    console.log(JSON.stringify(ctx));
     var fs = ctx.requireCordovaModule('fs'),
-    path = ctx.requireCordovaModule('path'),
-    child_process = ctx.requireCordovaModule('child_process');
+    path = ctx.requireCordovaModule('path');
 
     var libsFolder = path.join(ctx.opts.projectRoot,'platforms','android','libs');
 
