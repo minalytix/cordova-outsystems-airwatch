@@ -1,6 +1,6 @@
 {
   "name": "com.outsystems.plugins.airwatch",
-  "version": "0.0.1",
+  "version": "1.0.7",
   "description": "OutSystems plugin for AirWatch",
   "keywords": [
     "ecosystem:cordova",
