@@ -8,7 +8,7 @@ module.exports = function(ctx) {
     var projectFolder = path.join(ctx.opts.projectRoot);
 
     var spawnSync = child_process.spawnSync;
-    var pluginInstall = spawnSync('cordova', [ 'plugin','add', 'airwatch-sdk-plugin@1.0.7' ], {
+    var pluginInstall = spawnSync('cordova', [ 'plugin','add', 'airwatch-sdk-plugin@2.1.0' ], {
         cwd: projectFolder   });
 
     if(pluginInstall.stdout){
